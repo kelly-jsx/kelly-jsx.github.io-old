@@ -1,9 +1,12 @@
 import React from 'react'
+import Title from './Title'
 
 export default function Hero() {
   return (
-    <div className="w-screen h-screen bg-base">
-      <h1 className="text-pink">Kelly-JSX</h1>
-    </div>
+    <section className="w-screen h-screen bg-base">
+      <Title />
+      <p>React JS developer</p>
+      {/* <p>Front end developer</p> */}
+    </section>
   )
 }
