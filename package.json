@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@catppuccin/tailwindcss": "^0.1.1",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "tailwindcss-animated": "^1.0.1"
   }
 }

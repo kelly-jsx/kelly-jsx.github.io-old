@@ -1,5 +1,6 @@
 import React from 'react'
 import Title from './Title'
+import Button from './Button'
 
 export default function Hero() {
   return (
@@ -7,6 +8,7 @@ export default function Hero() {
       <Title />
       <p>React JS developer</p>
       {/* <p>Front end developer</p> */}
+      <Button title="about me" />
     </section>
   )
 }
