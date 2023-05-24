@@ -11,7 +11,7 @@ export default function Button({ title }: Props) {
     <button
       className={`${
         effect && 'animate-jump'
-      } px-3 py-2 transition duration-500 border-2 rounded-lg border-pink text-pink hover:text-base hover:bg-pink`}
+      } px-3 py-2 lg:h-max lg:py-4 transition duration-500 border-2 rounded-lg border-pink text-pink hover:text-base hover:bg-pink`}
       onClick={() => setEffect(true)}
       onAnimationEnd={() => setEffect(false)}
     >
