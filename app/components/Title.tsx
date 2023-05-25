@@ -5,10 +5,10 @@ type Props = {
   classN?: string
 }
 
-export default function title({ children, classN }: Props) {
+export default function Title({ children, classN }: Props) {
   return (
     <h1
-      className={`${classN} text-4xl font-bold lg:text-6xl text-pink title`}
+      className={`${classN} font-bold text-pink`}
       style={{ fontFamily: 'Jetbrains Mono, monospace' }}
     >
       {children}

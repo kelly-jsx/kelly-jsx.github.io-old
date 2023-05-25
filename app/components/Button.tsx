@@ -1,21 +1,19 @@
-'use client'
-import React, { useState } from 'react'
+import React from 'react'
 
 type Props = {
-  title: string
+  children: any
+  link?: string
+  blank?: boolean
 }
 
-export default function Button({ title }: Props) {
-  const [effect, setEffect] = useState(false)
+export default function Button({ children, link, blank }: Props) {
   return (
-    <button
-      className={`${
-        effect && 'animate-jump'
-      } px-3 py-2 lg:h-max lg:py-4 transition duration-500 border-2 rounded-lg border-pink text-pink hover:text-base hover:bg-pink`}
-      onClick={() => setEffect(true)}
-      onAnimationEnd={() => setEffect(false)}
+    <a
+      href={link}
+      target={`${blank && '_blank'}`}
+      className="text-xl lowercase btn btn-outline btn-primary"
     >
-      {title}
-    </button>
+      {children}
+    </a>
   )
 }

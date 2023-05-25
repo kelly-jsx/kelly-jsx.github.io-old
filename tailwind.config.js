@@ -14,10 +14,28 @@ module.exports = {
       },
     },
   },
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: '#f5c2e7',
+          secondary: '#cba6f7',
+          accent: '#eba0ac',
+          neutral: '#f9e2af',
+          'base-100': '#1e1e2e',
+          info: '#89b4fa',
+          success: '#a6e3a1',
+          warning: '#fab387',
+          error: '#f38ba8',
+        },
+      },
+    ],
+  },
   plugins: [
     require('@catppuccin/tailwindcss')({
       defaultFlavour: 'mocha',
     }),
     require('tailwindcss-animated'),
+    require('daisyui'),
   ],
 }

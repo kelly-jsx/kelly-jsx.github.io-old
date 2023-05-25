@@ -1,15 +1,15 @@
 import React from 'react'
 import Title from './Title'
 
-export default function AboutMe() {
+export default function Skills() {
   return (
     <section
-      id="aboutme"
-      className="flex justify-center px-5 py-20 lg:py-28 bg-mantle"
+      id="skills"
+      className="flex justify-center px-5 py-20 lg:py-28 bg-base"
     >
       <div className="flex flex-col items-center text-center lg:w-2/4 lg:flex-row lg:justify-between lg:gap-40">
         <div>
-          <Title classN="text-4xl lg:text-6xl mb-14 lg:mb-0">About me</Title>
+          <Title classN="text-4xl lg:text-6xl mb-14 lg:mb-0">Skills</Title>
         </div>
         <div>
           <p className="text-justify">
