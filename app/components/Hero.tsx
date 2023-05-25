@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation'
 export default function Hero() {
   return (
     <section className="flex items-center justify-center h-screen px-4 m-0 text-center bg-base">
-      <div className="flex flex-col gap-2 lg:flex-row lg:gap-40 lg:items-center">
+      <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:w-2/4 lg:justify-between">
         <div className="flex flex-col lg:gap-4">
           <Title>Kelly-JSX</Title>
           <TypeAnimation
