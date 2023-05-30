@@ -28,18 +28,24 @@ export default function Hero() {
           />
         </div>
         <div className="grid grid-cols-3 gap-2 lg:gap-4">
-          <Button link="#aboutme" blank={false}>
-            about me
-          </Button>
+          <Button link="#aboutme">about me</Button>
           <Button link="#skills">skills</Button>
           <Button link="#projects">projects</Button>
           <Button link="#contact">contact</Button>
-          <Button link="https://github.com/kelly-jsx">
+          <a
+            href="https://github.com/kelly-jsx"
+            target="_blank"
+            className="text-xl lowercase btn btn-outline btn-primary"
+          >
             <FiGithub />
-          </Button>
-          <Button link="https://www.linkedin.com/in/sebastian-b%C5%82och-165681264">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sebastian-b%C5%82och-165681264"
+            target="_blank"
+            className="text-xl lowercase btn btn-outline btn-primary"
+          >
             <SiLinkedin />
-          </Button>
+          </a>
         </div>
       </div>
     </section>
