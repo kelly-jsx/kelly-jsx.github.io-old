@@ -6,7 +6,7 @@ import { FiGithub } from 'react-icons/fi'
 
 export default function Header() {
   return (
-    <div className="flex items-center justify-between w-screen px-12 py-4 bg-crust">
+    <div className="sticky top-0 flex items-center justify-between w-screen px-12 py-4 bg-crust">
       <div>
         <Title classN="text-4xl">Kelly-JSX</Title>
       </div>
