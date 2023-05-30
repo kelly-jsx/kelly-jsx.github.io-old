@@ -8,7 +8,7 @@ import { FiGithub } from 'react-icons/fi'
 
 export default function Hero() {
   return (
-    <section className="flex items-center justify-center h-screen px-4 m-0 text-center bg-base">
+    <section className="flex items-center justify-center h-screen m-0 text-center bg-base">
       <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:w-2/4 lg:justify-between">
         <div className="flex flex-col lg:gap-4">
           <Title classN="text-4xl lg:text-6xl">Kelly-JSX</Title>
