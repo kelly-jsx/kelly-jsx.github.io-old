@@ -5,6 +5,7 @@ import Button from './Button'
 import { TypeAnimation } from 'react-type-animation'
 
 import { FiGithub } from 'react-icons/fi'
+import { SiLinkedin } from 'react-icons/si'
 
 export default function Hero() {
   return (
@@ -26,13 +27,16 @@ export default function Hero() {
             repeat={Infinity}
           />
         </div>
-        <div className="flex gap-2 lg:gap-4">
+        <div className="grid grid-cols-3 gap-2 lg:gap-4">
           <Button link="#aboutme">about me</Button>
           <Button link="#skills">skills</Button>
           <Button link="#projects">projects</Button>
           <Button link="#contact">contact</Button>
           <Button link="https://github.com/kelly-jsx">
             <FiGithub />
+          </Button>
+          <Button link="https://www.linkedin.com/in/sebastian-b%C5%82och-165681264">
+            <SiLinkedin />
           </Button>
         </div>
       </div>
