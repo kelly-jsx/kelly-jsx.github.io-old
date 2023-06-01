@@ -10,7 +10,7 @@ import { SiLinkedin } from 'react-icons/si'
 export default function Hero() {
   return (
     <section className="flex items-center justify-center h-screen m-0 text-center bg-base">
-      <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:w-2/4 lg:justify-between">
+      <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:w-3/4 2xl:w-1/2 lg:justify-between lg:gap-4">
         <div className="flex flex-col lg:gap-4">
           <Title classN="text-4xl lg:text-6xl">Kelly-JSX</Title>
           <TypeAnimation
