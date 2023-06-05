@@ -2,32 +2,43 @@ import React from 'react'
 
 import { FiGithub } from 'react-icons/fi'
 
-export default function ProjectComp() {
+type Props = {
+  screenshot: string
+  title: string
+  badges: string[]
+  demo: string
+  repository: string
+}
+
+export default function ProjectComp({
+  screenshot,
+  title,
+  badges,
+  demo,
+  repository,
+}: Props) {
   return (
-    <div className="shadow-xl card card-compact w-96 bg-base-100">
+    <div className="w-auto shadow-xl card card-compact bg-base-100">
       <figure>
-        <img
-          src="https://raw.githubusercontent.com/kelly-jsx/rock-paper-scissors/main/screenshot.png"
-          alt="Shoes"
-        />
+        <img src={screenshot} alt={title} />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Rock Papers Scissors Game</h2>
+        <h2 className="card-title">{title}</h2>
         <div className="flex gap-3">
-          <div className="badge badge-outline">React JS</div>
+          {badges.map((badge, index) => (
+            <div className="badge badge-outline" key={index}>
+              {badge}
+            </div>
+          ))}
         </div>
         <div className="justify-end card-actions">
-          <a
-            className="btn btn-primary"
-            target="_blank"
-            href="https://glowing-meringue-074ec1.netlify.app/"
-          >
+          <a className="btn btn-primary" target="_blank" href={demo}>
             demo
           </a>
           <a
             className="text-xl btn btn-primary"
             target="_blank"
-            href="https://github.com/kelly-jsx/rock-paper-scissors"
+            href={repository}
           >
             <FiGithub />
           </a>

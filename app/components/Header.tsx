@@ -7,7 +7,7 @@ import { SiLinkedin } from 'react-icons/si'
 
 export default function Header() {
   return (
-    <div className="sticky top-0 flex items-center w-screen px-4 py-4 lg:justify-between lg:px-12 bg-crust">
+    <div className="sticky top-0 z-10 flex items-center w-screen px-4 py-4 lg:justify-between lg:px-12 bg-crust">
       <div className="lg:hidden">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
