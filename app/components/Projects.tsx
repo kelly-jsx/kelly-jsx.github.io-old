@@ -11,7 +11,8 @@ export default function Projects() {
     >
       <div className="flex flex-col items-center px-4 text-center lg:px-32 gap-14 lg:gap-16">
         <Title classN="text-4xl lg:text-6xl lg:mb-0">Projects</Title>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+        {/* <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"> */}
+        <div className="grid gap-4 w-96 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1">
           {projects.map((project, index) => (
             <ProjectComp
               key={index}
