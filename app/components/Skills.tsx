@@ -30,7 +30,7 @@ export default function Skills() {
     >
       <div className="flex flex-col items-center w-full px-4 text-center lg:px-32 gap-14 lg:gap-16">
         <Title classN="text-4xl lg:text-6xl lg:mb-0">Skills</Title>
-        <div className="flex justify-around w-full gap-2 lg:gap-4 xl:gap-6">
+        <div className="flex justify-around w-3/4 gap-2 lg:gap-4 xl:gap-6">
           <div className="w-1/2">
             <Title classN="mb-4 text-lg lg:text-xl">General</Title>
             <div className="grid gap-2 lg:grid-cols-2 xl:grid-cols-3">
