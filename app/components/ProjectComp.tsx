@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 import { FiGithub } from 'react-icons/fi'
 
@@ -20,7 +21,8 @@ export default function ProjectComp({
   return (
     <div className="w-auto shadow-xl card card-compact bg-base-100">
       <figure>
-        <img src={screenshot} alt={title} />
+        {/* <img src={screenshot} alt={title} /> */}
+        <Image src={screenshot} alt={title} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
