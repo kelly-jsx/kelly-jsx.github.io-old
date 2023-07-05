@@ -22,7 +22,7 @@ export default function ProjectComp({
     <div className="w-auto shadow-xl card card-compact bg-base-100">
       <figure>
         {/* <img src={screenshot} alt={title} /> */}
-        <Image src={screenshot} alt={title} />
+        <Image src={screenshot} alt={title} width={800} height={500} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
