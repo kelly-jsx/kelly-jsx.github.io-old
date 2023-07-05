@@ -59,7 +59,9 @@ export default function Header() {
         </div>
       </div>
       <div>
-        <Title classN="text-2xl lg:text-4xl">Kelly-JSX</Title>
+        <a className="normal-case btn btn-ghost" href="#">
+          <Title classN="text-2xl lg:text-4xl">Kelly-JSX</Title>
+        </a>
       </div>
       <div className="hidden gap-4 lg:flex">
         <Button link="#aboutme">about me</Button>
